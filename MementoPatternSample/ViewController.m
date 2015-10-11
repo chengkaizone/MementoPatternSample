@@ -13,6 +13,7 @@
 /**
  *  备忘录模式的简单运用---主要适用于需要持久化对象
  *  本例中使用了FastCoder开源代码实现数据的快速编解码
+ *  学习于YouXianMing对备忘录模式的理解
  */
 @interface ViewController ()
 
