@@ -13,6 +13,9 @@
 		12D936F21BCA23F9004A581C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12D936F01BCA23F9004A581C /* Main.storyboard */; };
 		12D936F41BCA23F9004A581C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12D936F31BCA23F9004A581C /* Assets.xcassets */; };
 		12D936F71BCA23F9004A581C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12D936F51BCA23F9004A581C /* LaunchScreen.storyboard */; };
+		12D937011BCA245B004A581C /* FastCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D937001BCA245B004A581C /* FastCoder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		12D937071BCA24EC004A581C /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D937061BCA24EC004A581C /* Product.m */; settings = {ASSET_TAGS = (); }; };
+		12D9370B1BCA2545004A581C /* MementoKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D9370A1BCA2545004A581C /* MementoKit.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,13 @@
 		12D936F31BCA23F9004A581C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12D936F61BCA23F9004A581C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12D936F81BCA23F9004A581C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12D936FF1BCA245B004A581C /* FastCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastCoder.h; sourceTree = "<group>"; };
+		12D937001BCA245B004A581C /* FastCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastCoder.m; sourceTree = "<group>"; };
+		12D937051BCA24EC004A581C /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		12D937061BCA24EC004A581C /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		12D937091BCA2545004A581C /* MementoKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MementoKit.h; sourceTree = "<group>"; };
+		12D9370A1BCA2545004A581C /* MementoKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MementoKit.m; sourceTree = "<group>"; };
+		12D9370C1BCA255B004A581C /* MementoPtotocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MementoPtotocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +72,8 @@
 				12D936EB1BCA23F9004A581C /* AppDelegate.m */,
 				12D936ED1BCA23F9004A581C /* ViewController.h */,
 				12D936EE1BCA23F9004A581C /* ViewController.m */,
+				12D937081BCA252E004A581C /* Memento */,
+				12D936FE1BCA245B004A581C /* FastCoder */,
 				12D936F01BCA23F9004A581C /* Main.storyboard */,
 				12D936F31BCA23F9004A581C /* Assets.xcassets */,
 				12D936F51BCA23F9004A581C /* LaunchScreen.storyboard */,
@@ -77,6 +89,27 @@
 				12D936E81BCA23F9004A581C /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		12D936FE1BCA245B004A581C /* FastCoder */ = {
+			isa = PBXGroup;
+			children = (
+				12D936FF1BCA245B004A581C /* FastCoder.h */,
+				12D937001BCA245B004A581C /* FastCoder.m */,
+			);
+			path = FastCoder;
+			sourceTree = "<group>";
+		};
+		12D937081BCA252E004A581C /* Memento */ = {
+			isa = PBXGroup;
+			children = (
+				12D937051BCA24EC004A581C /* Product.h */,
+				12D937061BCA24EC004A581C /* Product.m */,
+				12D937091BCA2545004A581C /* MementoKit.h */,
+				12D9370A1BCA2545004A581C /* MementoKit.m */,
+				12D9370C1BCA255B004A581C /* MementoPtotocol.h */,
+			);
+			name = Memento;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +182,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12D9370B1BCA2545004A581C /* MementoKit.m in Sources */,
 				12D936EF1BCA23F9004A581C /* ViewController.m in Sources */,
+				12D937071BCA24EC004A581C /* Product.m in Sources */,
+				12D937011BCA245B004A581C /* FastCoder.m in Sources */,
 				12D936EC1BCA23F9004A581C /* AppDelegate.m in Sources */,
 				12D936E91BCA23F9004A581C /* main.m in Sources */,
 			);

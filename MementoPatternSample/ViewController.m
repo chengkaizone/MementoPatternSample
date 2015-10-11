@@ -7,7 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "Product.h"
+#import "MementoKit.h"
 
+/**
+ *  备忘录模式的简单运用---主要适用于需要持久化对象
+ *  本例中使用了FastCoder开源代码实现数据的快速编解码
+ */
 @interface ViewController ()
 
 @end
@@ -16,12 +22,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    Product *duct = [Product new];
+    duct.name = @"test";
+    duct.count = @(12);
+    
+    [MementoKit saveMementoObject:duct forKey:@"Product"];
+
+    id state = [MementoKit mementoForKey:@"Product"];
+    [duct recoverFromState:state];
+    
+    
+    
+    NSLog(@"%@   %@",duct.name, duct.count);
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end
